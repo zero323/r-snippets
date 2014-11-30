@@ -9,3 +9,8 @@
 
 # RStudio files
 .Rproj.user/
+
+# Rcpp
+src/*.o
+src/*.so
+src/*.dll
