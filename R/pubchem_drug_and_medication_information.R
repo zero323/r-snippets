@@ -28,8 +28,6 @@ pubchem_drug_and_medication_information <- function(cid) {
         if (! "Information" %in% names(dmi)) {
             dmi <- dmi[, "Section"][[1]]
         }
-        
         setNames(apply(dmi, 1, function(x) do.call(cbind, x["Information"])), dmi$TOCHeading)
-    
     }
 }
