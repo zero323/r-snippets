@@ -18,7 +18,8 @@ pubchem_drug_and_medication_information <- function(cid) {
     
     # Get index of "Drug and Medication Information" section
     dmi_index <- which(record$Section$TOCHeading == "Drug and Medication Information")
+    dmi <- record$Section[dmi_index, "Section"][[1]]
     
     # Extract "Drug and Medication Information" 
-    setNames(apply(d, 1, function(x) do.call(cbind, x[3])), d[, 1])
+    setNames(apply(dmi, 1, function(x) do.call(cbind, x[3])), dmi[, 1])
 }
