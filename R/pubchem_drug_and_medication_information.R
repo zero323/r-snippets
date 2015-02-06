@@ -1,5 +1,3 @@
-library(jsonlite)
-
 #' Download Drug and Medication Information for a given compound from PubChem
 #'
 #' @param cid
@@ -10,7 +8,7 @@ pubchem_drug_and_medication_information <- function(cid) {
     base_url <- "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/%i/JSON"
     
     # Fetch data
-    r <- fromJSON(sprintf(base_url, cid))
+    r <- jsonlite::fromJSON(sprintf(base_url, cid))
     
     # Extract record
     record <- r$Record
