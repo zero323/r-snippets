@@ -1,0 +1,5 @@
+testthat::expect_equal(naomit(NA), numeric(0))
+testthat::expect_equal(naomit(rep(NA, 100)), numeric(0))
+testthat::expect_equal(naomit(c(1, NA, 2)), 1:2)
+testthat::expect_equal(naomit(c(NA, 1:100, NA)), 1:100)
+testthat::expect_equal(naomit(c(rep(NA, 3), -10:10, rep(NA, 100))), -10:10)
