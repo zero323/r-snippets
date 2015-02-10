@@ -1,8 +1,15 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
-
-//' @export
+//' Merge two sorted (nondecreasingly or nonincreasingly) vectors
+//' 
+//' @param first numeric vector
+//' @param second numeric vector
+//' @return numeric vector
+//' @examples
+//' sortedmerge(c(1, 3, 5), c(2, 4, 6))
+//' sortedmerge(3:1, 3:1)
+//' 
 // [[Rcpp::export]]
 NumericVector sortedmerge(const NumericVector first, const NumericVector second) {
     if(is_true(any(is_na(first)))) stop("First contains NAs");
