@@ -5,6 +5,21 @@
 
 using namespace Rcpp;
 
+// NAimput
+NumericVector NAimput(const NumericVector x);
+RcppExport SEXP zero323_NAimput(SEXP xSEXP) {
+BEGIN_RCPP
+    SEXP __sexp_result;
+    {
+        Rcpp::RNGScope __rngScope;
+        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
+        NumericVector __result = NAimput(x);
+        PROTECT(__sexp_result = Rcpp::wrap(__result));
+    }
+    UNPROTECT(1);
+    return __sexp_result;
+END_RCPP
+}
 // randperm
 NumericVector randperm(const NumericVector x);
 RcppExport SEXP zero323_randperm(SEXP xSEXP) {

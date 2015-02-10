@@ -1,0 +1,7 @@
+testthat::expect_equal(NAimput(1), 1)
+testthat::expect_equal(NAimput(c(NA, 1, NA)), rep(1, 3))
+testthat::expect_equal(NAimput(c(NA, NA, 4, 5, NA)), c(4, 4, 4, 5, 5))
+testthat::expect_equal(NAimput(c(1, NA, 2)), c(1, 1.5, 2))
+testthat::expect_equal(NAimput(c(1, NA, NA, NA, NA, 2)), seq(1, 2, 0.2))
+testthat::expect_equal(NAimput(c(1, NA, 2, NA, NA, 3)), c(1, 1.5, 2, 2.33, 2.67, 3), tolerance = 0.005)
+testthat::expect_error(NAimput(NA))
