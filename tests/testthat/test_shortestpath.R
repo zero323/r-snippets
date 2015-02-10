@@ -1,4 +1,3 @@
-library(testthat)
 
 #testthat::expect_equal(shortestpath(matrix(0), 0, 0), 0)
 

@@ -1,4 +1,3 @@
-library(testthat)
 
 testthat::expect_equal(
     replace_emails("This is an email from root@localhost"),

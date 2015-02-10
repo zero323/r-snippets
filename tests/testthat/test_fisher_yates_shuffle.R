@@ -1,4 +1,3 @@
-library(testthat)
 
 testthat::expect_equal(
     fisher_yates_shuffle(logical(0)),

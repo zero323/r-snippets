@@ -1,4 +1,3 @@
-library(testthat)
 
 expect_equal(
     ngram_tokenizer(1)(""),

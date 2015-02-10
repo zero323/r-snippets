@@ -1,4 +1,3 @@
-library(testthat)
 
 testthat::expect_equal(mode(1), 1)
 testthat::expect_equal(mode(numeric(0)), NA_integer_)

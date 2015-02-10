@@ -1,4 +1,3 @@
-library(testthat)
 
 testthat::expect_error(perms(-1))
 testthat::expect_true(is.matrix(perms(1)))

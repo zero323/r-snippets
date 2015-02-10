@@ -1,4 +1,3 @@
-library(testthat)
 
 testthat::expect_error(simplify2array(list(1:3, 1:10)))
 testthat::expect_error(simplify2array(list(1, matrix(1))))
