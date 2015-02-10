@@ -7,7 +7,6 @@
 #' winsor(1:1000, 3)
 #' winsor(rnorm(1000), 25)
 #' winsor(runif(1000), 100)
-#' @export
 #'
 winsor <- function(x, k) {
     stopifnot(is.numeric(x), is.finite(x))

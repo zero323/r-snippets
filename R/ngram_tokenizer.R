@@ -1,7 +1,6 @@
 #' Ngrams tokenizer
 #' @param n integer
 #' @return n-gram tokenizer function
-#' @export
 ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE) {
     stopifnot(is.numeric(n), is.finite(n), n > 0)
     options <- stringi::stri_opts_brkiter(type="word", skip_word_none = skip_word_none)

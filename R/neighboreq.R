@@ -5,7 +5,6 @@
 #' @examples 
 #' neighboreq(rep(0, 10))
 #' neighboreq(1:10)
-#' @export
 #'
 neighboreq <- function(x) {
     stopifnot(is.atomic(x))

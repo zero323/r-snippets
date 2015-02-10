@@ -6,7 +6,6 @@
 #' @examples
 #' quantile(rnorm(100), 0.5)
 #' quantile(1:100, c(0.25, 0.5, 0.75))
-#' @export
 quantile <- function(x, p) {
     stopifnot(is.numeric(x), is.finite(x))
     stopifnot(is.numeric(p), all(p >= 0 && p <= 1))

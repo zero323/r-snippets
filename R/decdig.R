@@ -7,7 +7,6 @@
 #' decdig(pi, 3)
 #' decdig(exp(1), 5)
 #' decdig(1e-2, 3)
-#' @export
 #' 
 decdig <- function(x, n) {
     stopifnot(is.numeric(x))

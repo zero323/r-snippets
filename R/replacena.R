@@ -7,7 +7,6 @@
 #' @examples
 #' replacena(c(1, NA, 2))
 #' replacena(c(0, NA, 0, NA, 0))
-#' @export
 #'
 replacena <- function(x) {
     # If the first or the last element are missing 

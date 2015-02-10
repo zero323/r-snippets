@@ -3,7 +3,6 @@
 #' @param x character vector
 #' @param replacement character 
 #' @return character vector
-#' @export
 
 replace_emails <- function(x, replacement = "__EMAIL__") {
  

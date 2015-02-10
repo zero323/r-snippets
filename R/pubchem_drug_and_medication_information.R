@@ -2,7 +2,6 @@
 #'
 #' @param cid
 #' @return list of data.frames 
-#' @export
 pubchem_drug_and_medication_information <- function(cid) {
     stopifnot(is.numeric(cid))
     base_url <- "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/%i/JSON"

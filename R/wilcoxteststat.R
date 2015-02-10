@@ -7,7 +7,6 @@
 #' wilcoxteststat(runif(10) + 1, rnorm(10))
 #' wilcoxteststat(rnorm(100), rnorm(100))
 #' wilcoxteststat(1:10, 1:10)
-#' @export
 wilcoxteststat <- function(x, y) {
     stopifnot(length(x) == length(y))
     stopifnot(is.numeric(x), is.numeric(y))

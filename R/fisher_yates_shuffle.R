@@ -1,7 +1,6 @@
 #' Fisher–Yates shuffle
 #' @param x atomic vector
 #' @return shuffled x
-#' @export
 fisher_yates_shuffle <- function(x) {
     if (length(x) != 0) {
         for(i in 1:(length(x) - 1)) {
