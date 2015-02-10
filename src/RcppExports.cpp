@@ -5,6 +5,23 @@
 
 using namespace Rcpp;
 
+// lcs
+int lcs(NumericVector first, NumericVector second, bool trace = false);
+RcppExport SEXP zero323_lcs(SEXP firstSEXP, SEXP secondSEXP, SEXP traceSEXP) {
+BEGIN_RCPP
+    SEXP __sexp_result;
+    {
+        Rcpp::RNGScope __rngScope;
+        Rcpp::traits::input_parameter< NumericVector >::type first(firstSEXP );
+        Rcpp::traits::input_parameter< NumericVector >::type second(secondSEXP );
+        Rcpp::traits::input_parameter< bool >::type trace(traceSEXP );
+        int __result = lcs(first, second, trace);
+        PROTECT(__sexp_result = Rcpp::wrap(__result));
+    }
+    UNPROTECT(1);
+    return __sexp_result;
+END_RCPP
+}
 // NAimput
 NumericVector NAimput(const NumericVector x);
 RcppExport SEXP zero323_NAimput(SEXP xSEXP) {
@@ -14,6 +31,21 @@ BEGIN_RCPP
         Rcpp::RNGScope __rngScope;
         Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
         NumericVector __result = NAimput(x);
+        PROTECT(__sexp_result = Rcpp::wrap(__result));
+    }
+    UNPROTECT(1);
+    return __sexp_result;
+END_RCPP
+}
+// naomit
+NumericVector naomit(const NumericVector x);
+RcppExport SEXP zero323_naomit(SEXP xSEXP) {
+BEGIN_RCPP
+    SEXP __sexp_result;
+    {
+        Rcpp::RNGScope __rngScope;
+        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
+        NumericVector __result = naomit(x);
         PROTECT(__sexp_result = Rcpp::wrap(__result));
     }
     UNPROTECT(1);
