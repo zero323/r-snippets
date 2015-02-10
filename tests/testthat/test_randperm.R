@@ -1,0 +1,5 @@
+testthat::expect_equal(randperm(1), 1)
+testthat::expect_equal(randperm(rep(1, 3)), rep(1, 3))
+testthat::expect_equal(setdiff(1:100, randperm(1:100)), numeric(0))
+testthat::expect_equal(setdiff(randperm(1:100), 1:100), numeric(0))
+testthat::expect_equal(length(unique(randperm(1:5))), 5)

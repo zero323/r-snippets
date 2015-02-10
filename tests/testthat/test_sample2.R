@@ -1,0 +1,5 @@
+testthat::expect_error(sample2(1, 10))
+testthat::expect_error(sample2(numeric(0), 0))
+testthat::expect_error(sample2(10, 0))
+testthat::expect_equal(length(sample2(runif(1000), 11)), 11)
+testthat::expect_equal(length(sample2(runif(99), 2)), 2)
