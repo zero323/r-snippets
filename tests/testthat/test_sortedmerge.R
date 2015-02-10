@@ -1,0 +1,11 @@
+testthat::expect_equal(sortedmerge(c(-3, 3), 0), c(-3, 0, 3))
+testthat::expect_equal(sortedmerge(1, 1), c(1, 1))
+testthat::expect_equal(sortedmerge(c(1, 3, 5), c(2, 4, 6)), 1:6)
+testthat::expect_equal(sortedmerge(3:1, 3:1), rep(3:1, each = 2))
+testthat::expect_equal(sortedmerge(c(1, 3, 5), c(2, 4, 6)), 1:6)
+testthat::expect_equal(sortedmerge(seq(-5, 5, by = 2), seq(-4, 4, by = 2)), -5:5)
+
+testthat::expect_error(sortedmerge(NA, 1:3))
+testthat::expect_error(sortedmerge(1:3, NA))
+testthat::expect_error(sortedmerge(numeric(0), 1))
+testthat::expect_error(sortedmerge(1, numeric(0)))
