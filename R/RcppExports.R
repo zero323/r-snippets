@@ -14,6 +14,15 @@ lcs <- function(first, second, trace = FALSE) {
     .Call('zero323_lcs', PACKAGE = 'zero323', first, second, trace)
 }
 
+#' Determine the most frequently occurring value in an integer vector
+#'
+#' @param x integer vector
+#' @return integer mode of x
+#' 
+mode <- function(x) {
+    .Call('zero323_mode', PACKAGE = 'zero323', x)
+}
+
 #' Impute all missing values found in a given nondecreasingly ordered numeric vector x.
 #'
 #' @param x numeric vector
@@ -33,6 +42,15 @@ NAimput <- function(x) {
 #'
 naomit <- function(x) {
     .Call('zero323_naomit', PACKAGE = 'zero323', x)
+}
+
+#' Generate all permutations
+#'
+#' @param n integer
+#' @return matrix of permutations
+#' 
+perms <- function(n) {
+    .Call('zero323_perms', PACKAGE = 'zero323', n)
 }
 
 #' Generate a random permutation of a given numeric vector.
@@ -61,6 +79,26 @@ randperm <- function(x) {
 #' 
 sample2 <- function(x, k) {
     .Call('zero323_sample2', PACKAGE = 'zero323', x, k)
+}
+
+#' Given binary adjacency matrix return shortest path between vertices
+#' 
+#' @param G integer matrix
+#' @param x integer source
+#' @param y integer sink
+#' @return shortest path integer
+#' 
+shortestpath <- function(G, x, y) {
+    .Call('zero323_shortestpath', PACKAGE = 'zero323', G, x, y)
+}
+
+#' Take list of integer vectors and convert to array
+#'
+#' @param x List
+#' @return array
+#' 
+simplify2array <- function(x) {
+    .Call('zero323_simplify2array', PACKAGE = 'zero323', x)
 }
 
 #' Merge two sorted (nondecreasingly or nonincreasingly) vectors
