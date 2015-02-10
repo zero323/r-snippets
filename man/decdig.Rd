@@ -9,7 +9,7 @@ decdig(x, n)
 \arguments{
 \item{x}{a single numeric value}
 
-\item{n}{a single natural number, n ≤ 16}
+\item{n}{a single natural number, n <= 16}
 }
 \value{
 integer vector with n most significant decimal digits of x
