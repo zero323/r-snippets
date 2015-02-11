@@ -21,12 +21,4 @@ representing hours, minutes, and seconds respectively
 of a single day compute diffrences in seconds between
 ordered events
 }
-\examples{
-eventdifftime(
-   data.frame(
-   h = c(0, 6, 12, 18, 23),
-   m = c(0, 0, 0, 0, 59),
-   s = c(0, 0, 0, 0, 59)
-)
-}
 

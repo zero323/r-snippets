@@ -5,13 +5,6 @@
 #'
 #' @param x data frame with n rows
 #' @return numeric vector of length n - 1
-#' @examples
-#' eventdifftime(
-#'    data.frame(
-#'    h = c(0, 6, 12, 18, 23),
-#'    m = c(0, 0, 0, 0, 59),
-#'    s = c(0, 0, 0, 0, 59)
-#' )
 #'
 eventdifftime <- function(x) {
     stopifnot(is.data.frame(x))
