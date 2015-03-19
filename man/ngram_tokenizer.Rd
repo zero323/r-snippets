@@ -4,10 +4,14 @@
 \alias{ngram_tokenizer}
 \title{Ngrams tokenizer}
 \usage{
-ngram_tokenizer(n = 1L, skip_word_none = TRUE)
+ngram_tokenizer(n = 1L, skip_word_none = TRUE, skip_word_number = FALSE)
 }
 \arguments{
 \item{n}{integer}
+
+\item{skip_word_none}{boolean see: ?stri_split_boundaries}
+
+\item{skip_word_number}{boolean see: ?stri_split_boundaries}
 }
 \value{
 n-gram tokenizer function

@@ -1,14 +1,16 @@
 #' Ngrams tokenizer
 #' @param n integer
+#' @param skip_word_none boolean see: ?stri_split_boundaries
+#' @param skip_word_number boolean see: ?stri_split_boundaries
 #' @return n-gram tokenizer function
-ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE) {
+ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE, skip_word_number = FALSE) {
     stopifnot(is.numeric(n), is.finite(n), n > 0)
     
     #' To avoid :: calls
     stri_split_boundaries <- stringi::stri_split_boundaries
     stri_join <- stringi::stri_join
     
-    options <- stringi::stri_opts_brkiter(type="word", skip_word_none = skip_word_none)
+    options <- stringi::stri_opts_brkiter(type="word", skip_word_none = skip_word_none, skip_word_number = skip_word_number)
     
     function(x) {
         stopifnot(is.character(x))
