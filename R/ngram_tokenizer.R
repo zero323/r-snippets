@@ -10,7 +10,9 @@ ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE, skip_word_number = FA
     stri_split_boundaries <- stringi::stri_split_boundaries
     stri_join <- stringi::stri_join
     
-    options <- stringi::stri_opts_brkiter(type="word", skip_word_none = skip_word_none, skip_word_number = skip_word_number)
+    options <- stringi::stri_opts_brkiter(
+        type="word", skip_word_none = skip_word_none, skip_word_number = skip_word_number
+    )
     
     function(x) {
         stopifnot(is.character(x))
