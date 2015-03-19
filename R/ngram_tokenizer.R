@@ -1,4 +1,5 @@
 #' Ngrams tokenizer
+#' 
 #' @param n integer
 #' @param skip_word_none boolean see: ?stri_split_boundaries
 #' @param skip_word_number boolean see: ?stri_split_boundaries
@@ -14,6 +15,10 @@ ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE, skip_word_number = FA
         type="word", skip_word_none = skip_word_none, skip_word_number = skip_word_number
     )
     
+    #' Tokenizer
+    #' 
+    #' @param x character
+    #' @return character vector with n-grams
     function(x) {
         stopifnot(is.character(x))
     
