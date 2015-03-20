@@ -4,6 +4,10 @@
 #' @param skip_word_none boolean see: ?stri_split_boundaries
 #' @param skip_word_number boolean see: ?stri_split_boundaries
 #' @return n-gram tokenizer function
+#' @examples
+#' trigram_tokenizer <- ngram_tokenizer(3)
+#' trigram_tokenizer(as.character(citation()))
+#' 
 ngram_tokenizer <- function(n = 1L, skip_word_none = TRUE, skip_word_number = FALSE) {
     stopifnot(is.numeric(n), is.finite(n), n > 0)
     

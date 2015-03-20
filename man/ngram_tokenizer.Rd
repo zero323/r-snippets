@@ -19,4 +19,8 @@ n-gram tokenizer function
 \description{
 Ngrams tokenizer
 }
+\examples{
+trigram_tokenizer <- ngram_tokenizer(3)
+trigram_tokenizer(as.character(citation()))
+}
 
