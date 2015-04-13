@@ -2,7 +2,7 @@
 % Please edit documentation in R/row_qvalues.R
 \name{row_qvalues}
 \alias{row_qvalues}
-\title{Helper to compute rowwise qvalues for}
+\title{Helper to compute rowwise qvalues}
 \usage{
 row_qvalues(x, fac)
 }
@@ -15,6 +15,6 @@ row_qvalues(x, fac)
 qvalue object. See qvalue::qvalue for details
 }
 \description{
-Helper to compute rowwise qvalues for
+Helper to compute rowwise qvalues
 }
 

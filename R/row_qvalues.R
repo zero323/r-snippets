@@ -1,4 +1,4 @@
-#' Helper to compute rowwise qvalues for 
+#' Helper to compute rowwise qvalues
 #'
 #' @param x numeric matrix. See genefilter::rowttests for details
 #' @param fac group factor. See genefilter::rowttests for details
