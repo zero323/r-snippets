@@ -6,158 +6,118 @@
 using namespace Rcpp;
 
 // lcs
-int lcs(NumericVector first, NumericVector second, bool trace = false);
+int lcs(NumericVector first, NumericVector second, bool trace);
 RcppExport SEXP zero323_lcs(SEXP firstSEXP, SEXP secondSEXP, SEXP traceSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< NumericVector >::type first(firstSEXP );
-        Rcpp::traits::input_parameter< NumericVector >::type second(secondSEXP );
-        Rcpp::traits::input_parameter< bool >::type trace(traceSEXP );
-        int __result = lcs(first, second, trace);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type first(firstSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type second(secondSEXP);
+    Rcpp::traits::input_parameter< bool >::type trace(traceSEXP);
+    __result = Rcpp::wrap(lcs(first, second, trace));
+    return __result;
 END_RCPP
 }
 // mode
 int mode(IntegerVector x);
 RcppExport SEXP zero323_mode(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< IntegerVector >::type x(xSEXP );
-        int __result = mode(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< IntegerVector >::type x(xSEXP);
+    __result = Rcpp::wrap(mode(x));
+    return __result;
 END_RCPP
 }
 // NAimput
 NumericVector NAimput(const NumericVector x);
 RcppExport SEXP zero323_NAimput(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
-        NumericVector __result = NAimput(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(NAimput(x));
+    return __result;
 END_RCPP
 }
 // naomit
 NumericVector naomit(const NumericVector x);
 RcppExport SEXP zero323_naomit(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
-        NumericVector __result = naomit(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(naomit(x));
+    return __result;
 END_RCPP
 }
 // perms
 IntegerMatrix perms(int n);
 RcppExport SEXP zero323_perms(SEXP nSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< int >::type n(nSEXP );
-        IntegerMatrix __result = perms(n);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    __result = Rcpp::wrap(perms(n));
+    return __result;
 END_RCPP
 }
 // randperm
 NumericVector randperm(const NumericVector x);
 RcppExport SEXP zero323_randperm(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
-        NumericVector __result = randperm(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP);
+    __result = Rcpp::wrap(randperm(x));
+    return __result;
 END_RCPP
 }
 // sample2
 NumericVector sample2(const NumericVector x, int k);
 RcppExport SEXP zero323_sample2(SEXP xSEXP, SEXP kSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP );
-        Rcpp::traits::input_parameter< int >::type k(kSEXP );
-        NumericVector __result = sample2(x, k);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type k(kSEXP);
+    __result = Rcpp::wrap(sample2(x, k));
+    return __result;
 END_RCPP
 }
 // shortestpath
 int shortestpath(Rcpp::IntegerMatrix G, int x, int y);
 RcppExport SEXP zero323_shortestpath(SEXP GSEXP, SEXP xSEXP, SEXP ySEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< Rcpp::IntegerMatrix >::type G(GSEXP );
-        Rcpp::traits::input_parameter< int >::type x(xSEXP );
-        Rcpp::traits::input_parameter< int >::type y(ySEXP );
-        int __result = shortestpath(G, x, y);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< Rcpp::IntegerMatrix >::type G(GSEXP);
+    Rcpp::traits::input_parameter< int >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type y(ySEXP);
+    __result = Rcpp::wrap(shortestpath(G, x, y));
+    return __result;
 END_RCPP
 }
 // simplify2array
 NumericVector simplify2array(List x);
 RcppExport SEXP zero323_simplify2array(SEXP xSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< List >::type x(xSEXP );
-        NumericVector __result = simplify2array(x);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< List >::type x(xSEXP);
+    __result = Rcpp::wrap(simplify2array(x));
+    return __result;
 END_RCPP
 }
 // sortedmerge
 NumericVector sortedmerge(const NumericVector first, const NumericVector second);
 RcppExport SEXP zero323_sortedmerge(SEXP firstSEXP, SEXP secondSEXP) {
 BEGIN_RCPP
-    SEXP __sexp_result;
-    {
-        Rcpp::RNGScope __rngScope;
-        Rcpp::traits::input_parameter< const NumericVector >::type first(firstSEXP );
-        Rcpp::traits::input_parameter< const NumericVector >::type second(secondSEXP );
-        NumericVector __result = sortedmerge(first, second);
-        PROTECT(__sexp_result = Rcpp::wrap(__result));
-    }
-    UNPROTECT(1);
-    return __sexp_result;
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< const NumericVector >::type first(firstSEXP);
+    Rcpp::traits::input_parameter< const NumericVector >::type second(secondSEXP);
+    __result = Rcpp::wrap(sortedmerge(first, second));
+    return __result;
 END_RCPP
 }

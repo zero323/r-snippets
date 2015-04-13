@@ -14,7 +14,9 @@ Imports:
     jsonlite (>= 0.9.13),
     Hmisc,
     gridExtra,
-    magrittr
+    magrittr,
+    genefilter,
+    qvalue
 LinkingTo: Rcpp
 Suggests:
     testthat
