@@ -2,3 +2,9 @@ language: r
 bioc_required: true
 bioc_packages:
     - qvalue
+r_binary_packages:
+    - testthat
+    - data.table
+    - dplyr
+    - stringi
+    - ggplot2
