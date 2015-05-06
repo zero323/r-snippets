@@ -10,7 +10,7 @@ uncomment(text, tags)
 \arguments{
 \item{text}{character vector with input lines}
 
-\item{tags}{2-column character matrix with comment strings. Use NA to indicate "\n" as closing tag}
+\item{tags}{2-column character matrix with comment strings. Use NA to indicate "\\n" as closing tag}
 }
 \value{
 text without comments and empty lines. More or less.

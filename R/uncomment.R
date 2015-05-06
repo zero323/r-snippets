@@ -2,18 +2,14 @@
 #' It should be done with a proper lexer but who cares ;)
 #'
 #' @param text character vector with input lines
-#' @param tags 2-column character matrix with comment strings. Use NA to indicate "\n" as closing tag
+#' @param tags 2-column character matrix with comment strings. Use NA to indicate "\\n" as closing tag
 #' @return text without comments and empty lines. More or less.
 uncomment <- function(text, tags) {
     multiline <- "(.|[\r\n])*?"
     inline <- "[^\n]*"
     
     combined <- paste(text, collapse = "\n")
-    escaped_tags <- if (require(Hmisc)){
-        Hmisc::escapeRegex(tags)
-    } else {
-        gsub("\\*", "\\\\*", tags)
-    }
+    Hmisc::escapeRegex(tags)
     
     pattern <- paste(apply(
         escaped_tags,
