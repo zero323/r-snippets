@@ -41,7 +41,7 @@ golden_ratio <- function(f, a, b, eps = 1e-16, maxiter = 100) {
         }
     }
     
-    if(convergence == 1) warning("Method didn’t converge")
+    if(convergence == 1) warning("Method didn't converge")
     
     list(
         par = (a + b) / 2,
