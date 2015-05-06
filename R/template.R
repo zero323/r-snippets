@@ -30,11 +30,11 @@ template <- function(dirname, data) {
         data <- get_data(template, data)
         
         lines <- readLines(template)
-        tags <- Filter(function(x) !is.na(x), unlist(stri_extract_all_regex(lines, pattern)))
+        tags <- Filter(function(x) !is.na(x), unlist(stringi::stri_extract_all_regex(lines, pattern)))
         for(tag in tags) {
             i <- which(data$key == tag)
             if (length(i) != 0) {
-                lines <- stri_replace_all_regex(lines, stri_join("%", tag, "%"), data$value[i])
+                lines <- stringi::stri_replace_all_regex(lines, stringi::stri_join("%", tag, "%"), data$value[i])
             } else {
                 warning(paste(tag, "not found"))
             }
@@ -44,7 +44,7 @@ template <- function(dirname, data) {
     
     lapply(
         templates,
-        function(template) writeLines(process_template(template, data), stri_replace_last_regex(template, "tpl$", "txt"))
+        function(template) writeLines(process_template(template, data), stringi::stri_replace_last_regex(template, "tpl$", "txt"))
     )
     
     invisible()
