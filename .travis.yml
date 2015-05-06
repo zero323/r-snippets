@@ -9,6 +9,7 @@ r_binary_packages:
     - stringi
     - ggplot2
     - devtools
+    - roxygen2 
 
 # http://gearchicken.com/wordpress/?p=105 
 before_install:
