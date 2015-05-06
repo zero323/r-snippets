@@ -4,8 +4,6 @@
 #' @param data - data frame with two - columns key and value
 #'
 template <- function(dirname, data) {
-    library(stringi)
-    
     stopifnot(is.character(dirname), length(dirname) == 1)
     stopifnot(is.data.frame(data), "key" %in% colnames(data), "value" %in% colnames(data))
     
