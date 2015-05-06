@@ -10,6 +10,8 @@ lcs(first, second, trace = FALSE)
 \item{first}{numeric vector}
 
 \item{second}{numeric vector}
+
+\item{trace}{bool}
 }
 \value{
 length of the lcs

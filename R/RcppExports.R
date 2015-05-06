@@ -5,6 +5,7 @@
 #'
 #' @param first numeric vector
 #' @param second numeric vector
+#' @param trace bool
 #' @return length of the lcs 
 #' @examples
 #' lcs(charToRaw("GAGAGTAGATAG"), charToRaw("ATA"))
