@@ -9,7 +9,7 @@ uncomment <- function(text, tags) {
     inline <- "[^\n]*"
     
     combined <- paste(text, collapse = "\n")
-    Hmisc::escapeRegex(tags)
+    escaped_tags <- Hmisc::escapeRegex(tags)
     
     pattern <- paste(apply(
         escaped_tags,
