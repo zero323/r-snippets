@@ -8,7 +8,7 @@ have common following node}
 inquisition(graph)
 }
 \arguments{
-\item{x}{binary adjacency matrix}
+\item{graph}{binary adjacency matrix}
 }
 \value{
 single logical value

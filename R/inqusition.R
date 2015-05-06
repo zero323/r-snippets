@@ -1,7 +1,7 @@
 #' For given adjacency matrix check if any two not directly connected vertices
 #' have common following node
 #'
-#' @param x binary adjacency matrix 
+#' @param graph binary adjacency matrix 
 #' @return single logical value
 #' @examples
 #' inquisition(matrix(ifelse(runif(100) > 0.75, 1, 0), nrow = 10))
