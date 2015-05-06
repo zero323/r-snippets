@@ -1,5 +1,5 @@
 #' Retrun logical vector w of length n where
-#' w_{l} == TRUE if there exists such p that l %in% i[p]:j[p]
+#' w_l == TRUE if there exists such p that l in i[p] to j[p]
 #'
 #' @param i an integer vector of lenght m
 #' @param j an integer vector of lenght m

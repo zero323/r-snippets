@@ -3,7 +3,7 @@
 \name{logiderle}
 \alias{logiderle}
 \title{Retrun logical vector w of length n where
-w_{l} == TRUE if there exists such p that l %in% i[p]:j[p]}
+w_l == TRUE if there exists such p that l in i[p] to j[p]}
 \usage{
 logiderle(i, j, n)
 }
@@ -19,7 +19,7 @@ logical vector of length n
 }
 \description{
 Retrun logical vector w of length n where
-w_{l} == TRUE if there exists such p that l %in% i[p]:j[p]
+w_l == TRUE if there exists such p that l in i[p] to j[p]
 }
 \examples{
 logiderle(c(1L, 4L), c(1L, 6L), 7L)
