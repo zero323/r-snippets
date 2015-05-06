@@ -8,6 +8,8 @@ checkParens2(text, parens = matrix(c("(", "{", "[", ")", "}", "]"), ncol = 2))
 }
 \arguments{
 \item{text}{character vector}
+
+\item{parens}{matrix containing opening and closing parens}
 }
 \value{
 index of first invalid bracket or 0

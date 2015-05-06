@@ -1,6 +1,7 @@
 #' Determine if  parentheses in a given text are properly nested.
 #'
 #' @param text character vector
+#' @param parens matrix containing opening and closing parens
 #' @return index of first invalid bracket or 0
 #' @examples
 #' checkParens1("(a (( b ) ( c )) ( d ) e )")
@@ -54,6 +55,7 @@ checkParens1 <- function(text, parens = matrix(c("(", "{", "[", ")", "}", "]"), 
 #' Determine if  parentheses in a given text are properly nested.
 #'
 #' @param text character vector
+#' @param parens matrix containing opening and closing parens
 #' @return index of first invalid bracket or 0
 #' @examples
 #' checkParens1("(a (( b ) ( c )) ( d ) e )")
