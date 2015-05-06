@@ -1,3 +1,8 @@
+#' Substitutes tags delimited by percent sign
+#'
+#' @param dirname - directory containing ".tpl" files
+#' @param data - data frame with two - columns key and value
+#'
 template <- function(dirname, data) {
     library(stringi)
     
