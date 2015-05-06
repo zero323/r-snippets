@@ -1,4 +1,4 @@
-#' Fisher–Yates shuffle
+#' Fisher-Yates shuffle
 #' @param x atomic vector
 #' @return shuffled x
 fisher_yates_shuffle <- function(x) {

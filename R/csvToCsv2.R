@@ -1,5 +1,5 @@
 #' Substitute field separators "," for ";"
-#' and decimal separators „.” for „,”
+#' and decimal separators "." for ","
 #'
 #' @param infname character, input path
 #' @param outfname  character, output path.
