@@ -7,7 +7,7 @@
 pubchem_drug_and_medication_information(cid)
 }
 \arguments{
-\item{cid}{}
+\item{cid}{numeric}
 }
 \value{
 list of data.frames
